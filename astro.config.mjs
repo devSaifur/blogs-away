@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
+import path from 'path'
 
 import cloudflare from '@astrojs/cloudflare'
 
@@ -10,4 +11,11 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   output: 'server',
   adapter: cloudflare(),
+  vite: {
+    resolve: {
+      alias: {
+        '@': path.resolve(import.meta.dirname, './src'),
+      },
+    },
+  },
 })
