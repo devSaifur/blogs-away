@@ -10,11 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.7.0",
     "@astrojs/mdx": "^3.0.1",
     "@astrojs/rss": "^4.0.6",
     "@astrojs/sitemap": "^3.1.5",
     "astro": "^4.9.2",
-    "@astrojs/check": "^0.7.0",
+    "hono": "^4.4.0",
+    "hono-astro-adapter": "^1.0.11",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.3"
   }
 }
