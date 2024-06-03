@@ -2,7 +2,7 @@ import { Hono } from 'hono'
 
 import { blogRoute } from './routes/blog'
 
-const app = new Hono().basePath('/api').route('/blog', blogRoute)
+const app = new Hono().basePath('/api').route('/blogs', blogRoute)
 
 export default app
 
